@@ -4,11 +4,10 @@ parameter DATA_WID = 16;
  reg [DATA_WID-1:0] in1; // To cla1 of cla_adder.v
  reg [DATA_WID-1:0] in2; // To cla1 of cla_adder.v
 
-// fpga4student.com FPGA projects, Verilog projects, VHDL projects // /*AUTOWIRE*/
  wire carry_out; // From cla1 of cla_adder.v
  wire [DATA_WID-1:0] sum; // From cla1 of cla_adder.v
 
-// fpga4student.com FPGA projects, Verilog projects, VHDL projects // 
+ 
 cla_adder cla1(/*AUTOINST*/
         //  Outputs
          .sum (sum[DATA_WID-1:0]),
@@ -23,7 +22,7 @@ cla_adder cla1(/*AUTOINST*/
   in2 = 16'd0;
   carry_in = 1'b0;
   end 
- // fpga4student.com FPGA projects, Verilog projects, VHDL projects
+ 
  initial begin
   #(`DELAY) 
   #(`DELAY)  in1 = 16'd10;
